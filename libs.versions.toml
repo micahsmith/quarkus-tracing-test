@@ -1,0 +1,16 @@
+[versions]
+kotlin = "2.3.10"
+quarkus = "3.33.1"
+
+[libraries]
+quarkus-bom = { group = "io.quarkus.platform", name = "quarkus-bom", version.ref = "quarkus" }
+quarkus-arc = { group = "io.quarkus", name = "quarkus-arc" }
+quarkus-container-image-jib = { group = "io.quarkus", name = "quarkus-container-image-jib" }
+quarkus-kotlin = { group = "io.quarkus", name = "quarkus-kotlin" }
+quarkus-rest = { group = "io.quarkus", name = "quarkus-rest" }
+quarkus-rest-jackson = { group = "io.quarkus", name = "quarkus-rest-jackson" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
